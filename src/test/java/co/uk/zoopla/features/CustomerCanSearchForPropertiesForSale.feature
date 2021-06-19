@@ -20,6 +20,7 @@ Feature: Search
       | M1 5                  | 3      | 3      | £300,000 | £500,000 | House      |
       | Manchester Piccadilly | 3      | 3      | £300,000 | £500,000 | House      |
       | ""                    | 3      | 3      | £300,000 | £500,000 | House      |
+      |                       | 3      | 3      | £300,000 | £500,000 | House      |
 
 
 

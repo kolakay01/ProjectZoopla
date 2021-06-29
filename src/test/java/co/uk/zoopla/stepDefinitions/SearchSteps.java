@@ -27,6 +27,7 @@ public class SearchSteps extends BasePage {
         homePage.clickFirstOption();
         homePage.BedDropDown();
 
+
     }
 
     @When("I select minimum bed as {string}")
@@ -39,27 +40,39 @@ public class SearchSteps extends BasePage {
     @When("I select maximun bed as {string}")
     public void i_select_maximun_bed_as(String max)
     {
-        homePage.selectMaxBed(max);
+
+         homePage.selectMaxBed(max);
 
     }
 
     @When("I select minimum price as {string}")
-    public void i_select_minimum_price_as(String string) {
+    public void i_select_minimum_price_as(String mini)
+    {
+        homePage.PriceDropDown();
+        homePage.selectMinPrice(mini);
 
     }
 
     @When("I select maximun price as {string}")
-    public void i_select_maximun_price_as(String string) {
+    public void i_select_maximun_price_as(String Max)
+    {
+        homePage.selectMaxPrice(Max);
+
 
     }
 
     @When("I choose {string} as property type")
-    public void i_choose_as_property_type(String string) {
+    public void i_choose_as_property_type(String string)
+    {
+        homePage.PropertyTypeSelector();
+        homePage.PropertyPick();
 
     }
 
     @When("I click on search button")
-    public void i_click_on_search_button() {
+    public void i_click_on_search_button()
+    {
+        homePage.searchButtonClick();
 
     }
 

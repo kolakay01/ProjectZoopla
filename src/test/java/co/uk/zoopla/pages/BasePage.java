@@ -2,7 +2,7 @@ package co.uk.zoopla.pages;
 
 import co.uk.zoopla.commons.DriverManager;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class BasePage extends DriverManager {
@@ -23,7 +23,7 @@ public class BasePage extends DriverManager {
         select.selectByVisibleText(text);
     }
 
-    /*public void selectByValue(WebElement element,String value)
+    public void selectByValue(WebElement element,String value)
     {
         select = new Select(element);
         select.selectByValue(value);
@@ -33,7 +33,7 @@ public class BasePage extends DriverManager {
     {
         select = new Select(element);
         select.selectByIndex(index);
-    }*/
+    }
 
 
 

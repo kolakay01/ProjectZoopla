@@ -41,6 +41,33 @@ public class HomePage extends BasePage {
     @FindBy(id = "beds_max")
     private WebElement maximumBed;
 
+   //Price Drop down arrow
+    @FindBy(css = ".css-11zqwlb-StyledDownArrowIcon.e1tnwg460")
+    private WebElement PriceDrop;
+
+    //min Price
+    @FindBy(id = "price_min")
+    private WebElement minimumPrice;
+
+    //max Price
+    @FindBy(id = "price_max")
+    private WebElement maximumPrice;
+
+    // Property Type drop down  NOT WORKING
+    @FindBy(css = ".css-11zqwlb-StyledDownArrowIcon.e1tnwg460")
+    private WebElement PropertyTyp;
+
+
+    //PropertySelect
+    @FindBy(css = ".css-181bif4-StyledLabel.e1k8yt8w1")
+    private WebElement PropertyTY;
+
+
+    //   searchButton
+    @FindBy(css = ".css-1s5vaqk-Button-UpdateButton-StyledButton.ebz205c11")
+    private WebElement SearchButton;
+
+
 
 
     public void acceptcookiePolicy()
@@ -71,6 +98,39 @@ public class HomePage extends BasePage {
     {
         selectByText(maximumBed,MaxBed);
     }
+
+
+    public void PriceDropDown()
+    {
+        PriceDrop.click();
+    }
+
+   public void selectMinPrice(String MiniPrice)
+    {
+        selectByText(minimumPrice,MiniPrice);
+    }
+
+    public void selectMaxPrice(String MaxiPrice)
+    {
+        selectByText(maximumPrice,MaxiPrice);
+    }
+
+    public void PropertyTypeSelector()
+    {
+       PropertyTyp.click();
+    }
+
+    public void PropertyPick()
+    {
+        PropertyTyp.click();
+    }
+
+    public void searchButtonClick()
+    {
+        SearchButton.click();
+    }
+
+
 
 
 }
